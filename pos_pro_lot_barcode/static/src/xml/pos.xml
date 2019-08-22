@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="SetSaleReturnButton">
+    	<t t-if="widget.get_current_pricelist_name()[1] == 0">
+	        <div class='control-button'>
+	            <t t-esc='widget.get_current_pricelist_name()[0]'/>
+	        </div>
+	    </t>
+    	<t t-if="widget.get_current_pricelist_name()[1] == '1'">
+	        <div class='control-button highlight'>
+	            <t t-esc='widget.get_current_pricelist_name()[0]'/>
+	        </div>
+	    </t>
+    </t>
+</templates>
